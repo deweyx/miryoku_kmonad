@@ -1,0 +1,12 @@
+name: 'miryoku-dv'
+on:
+  - workflow_dispatch
+jobs:
+  test:
+    uses: ./.github/workflows/main.yml
+    with:
+      mode: '["build"]'
+      kmonad_os: '["mac"]'
+      layers: '["flip"]'
+      alphas: '["dvorak"]'
+      clipboard: '["mac"]'
